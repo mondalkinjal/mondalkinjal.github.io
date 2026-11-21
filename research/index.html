@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kinjal Mondal, computational biophysics researcher at the University of Maryland. Research, selected publications, and contact.">
+<title>Research | Kinjal Mondal</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap top">
+<nav aria-label="Main navigation"><a href="/">Home</a><a href="/about/">About</a><a href="/research/" aria-current="page">Research</a><a href="/publications/">Publications</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="main" class="wrap">
+<section class="split" id="research">
+<h1 class="page-title">Research</h1>
+<div class="research-streams">
+<section class="focus" aria-labelledby="enzyme-design">
+<h3 id="enzyme-design">Enzyme design</h3>
+<p>Enzymes are biological catalysts, usually proteins, that speed up chemical reactions. Understanding how enzymes recognize substrates and how sequence changes affect activity can help guide their design.</p>
+<article><h4>Molecular dynamics (MD) of substrate binding</h4><p>I used MD simulations along with machine learning–based clustering approaches to study how mutations in the enzyme Smlt1473 affect its interactions with different substrates.</p><p class="resource-links"><a href="https://pubs.acs.org/jpcbfk/article/129/16/3948/3650020/Effect-of-Mutations-on-Smlt1473-Binding-to-Various">Paper</a><a href="https://github.com/mondalkinjal/Smlt1473-Mutation-study">Code</a></p></article>
+<article><h4>Multimodal enzyme activity prediction</h4><p>I am developing LANCE-7R, a multimodal model that uses enzyme and substrate representations alongside latent representations of reaction products to predict turnover, Michaelis, and inhibition constants. I am exploring contrastive learning and Joint Embedding Predictive Architectures (JEPAs) to learn representations relevant to binding and catalysis.</p></article>
+</section>
+<section class="focus" aria-labelledby="amp-design">
+<h3 id="amp-design">Antimicrobial peptide design</h3>
+<p>Antimicrobial peptides are being studied as alternatives to traditional antibiotics because they can inhibit bacterial growth. My research combines machine learning and structural biophysics to understand how peptide sequence and structure relate to activity and use them to design new sequences.</p>
+<article><h4>XAMPGen</h4><p>XAMPGen is my research on interpretable generative protein language models such as ProGen for antimicrobial peptide design. I studied what protein language models learn about peptide sequences and how those learned patterns relate to structure and antimicrobial activity by examining the model’s internal layers and attention patterns.</p><p class="resource-links"><a href="https://doi.org/10.64898/2026.11.03.764041">Preprint</a><a href="https://github.com/mondalkinjal/XAMPGen">Code</a></p></article>
+<article><h4>Interpretable activity prediction</h4><p>I used contrastive regression to refine peptide representations from the ESM protein language model using measured antimicrobial activity. I then used sparse autoencoders to interpret the learned representations and found that individual features correspond to short sequence motifs or physicochemical properties.</p></article>
+<article><h4>Topic modeling and STAMP</h4><p>I used topic models to identify recurring motifs in known antimicrobial peptide sequences. I also contributed to STAMP, a collaborative project that combines peptide representations, sequence topics, and species information to study activity across bacterial species.</p><p class="resource-links"><a href="https://doi.org/10.1038/s41598-025-30419-1">Topic modeling paper</a><a href="https://gitlab.com/padi.sarala-group/Topic_Model_Motif_Discovery">Topic modeling code</a><a href="https://doi.org/10.64898/2026.05.28.728246">STAMP preprint</a><a href="https://gitlab.com/anonymous-iclr/stamp">STAMP code</a></p></article>
+<article><h4>Structure-driven peptide design</h4><p>I use structural modeling and MD to study how peptides interact with lipid membranes and how those interactions can inform design. I study peptide structures in lipid bilayers and investigate how structural models can inform peptide design.</p><p class="resource-links"><a href="https://doi.org/10.1021/acsbiomedchemau.5c00084">Peptide–membrane paper</a><a href="https://doi.org/10.1021/jacsau.5c01524">Selective targeting paper</a></p></article>
+</section>
+<section class="focus" aria-labelledby="ml-for-md">
+<h3 id="ml-for-md">Machine learning for MD</h3>
+<p> Molecular dynamics simulations can be computationally expensive and produce large volumes of data. I develop machine learning methods to analyze these simulations and model molecular motion.</p>
+<article><h4>Physically interpretable clustering metrics</h4><p>Clustering is a ML technique commonly used in molecular simulations to group simulation trajectories into distinct states. Evaluating the quality of clustering algorithms is difficult because the underlying molecular states lack ground-truth labels. I developed physics-based metrics that evaluate clusters using properties and interactions of the system we want to study.</p><p class="resource-links"><a href="https://pubmed.ncbi.nlm.nih.gov/39723706/">Paper</a><a href="https://github.com/mondalkinjal/Clustering-Metrics">Code</a></p></article>
+<article><h4>AI for molecular dynamics trajectory generation</h4><p>I developed a graph neural network–based tokenizer for small molecule conformations. I used these tokens to train a GPT-style transformer to generate MD trajectories. In tests on butane and alanine dipeptide, the generated trajectories agreed with reference simulations on conformational basin populations and first-passage times.</p></article>
+<article><h4>Thermodynamic maps</h4><p>I co-developed thermodynamic maps, a machine learning approach for studying phase transitions from limited observations. I trained diffusion models on Ising model simulations to estimate critical exponents without ever seeing the phase transitions.</p><p class="resource-links"><a href="https://doi.org/10.1073/pnas.2321971121">Thermodynamic maps paper</a><a href="https://github.com/lherron2/thermomaps-ising">Thermodynamic maps code</a></p></article>
+</section>
+<section class="focus" aria-labelledby="theoretical-biophysics">
+<h3 id="theoretical-biophysics">Theoretical biophysics</h3>
+<p>As an undergraduate researcher in Srabanti Chaudhury’s group at IISER Pune, I used statistical mechanics to study how biomolecular processes unfold over time.</p>
+<article><h4>How proteins find their targets on DNA</h4><p>I modeled how proteins alternate between diffusion through solution and motion along DNA as they search for binding sites. I used these models to study how DNA conformation and molecular crowding affect search times, and extended the work to DNA target search in quorum-sensing cells.</p><p class="resource-links"><a href="https://doi.org/10.1021/acs.jpcb.0c01996">DNA conformation paper</a><a href="https://doi.org/10.1088/1742-5468/abb019">Molecular crowding paper</a><a href="https://doi.org/10.1016/j.bpj.2022.05.017">Quorum sensing paper</a></p></article>
+<article><h4>Memory and inertia in molecular transitions</h4><p>I used generalized Langevin equations to study how memory and inertia affect the time a biomolecule takes to cross an energy barrier. I helped develop numerical methods for systems with long-lived, power-law memory and used simulations to examine the distribution of transition times.</p><p class="resource-links"><a href="https://doi.org/10.1021/acs.jpcb.1c00173">Transition-time paper</a></p></article>
+</section>
+</div>
+</section>
+</main>
+</body>
+</html>

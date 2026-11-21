@@ -1,2 +1,3 @@
-# mondalkinjal.github.io
-Academic portfolio for Kinjal Mondal
+# Kinjal Mondal
+
+Academic portfolio for Kinjal Mondal.
